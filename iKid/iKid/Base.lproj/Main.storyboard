@@ -32,26 +32,41 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="dT8-xC-YiF">
+                                <rect key="frame" x="10" y="30" width="394" height="308"/>
+                            </imageView>
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="run" translatesAutoresizingMaskIntoConstraints="NO" id="S8N-pu-gRB">
+                                <rect key="frame" x="94" y="91" width="227" height="247"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3zK-wE-hz3" firstAttribute="leading" secondItem="ARf-8l-gfl" secondAttribute="leading" constant="16" id="4Pp-v0-Ecc"/>
                             <constraint firstItem="ARf-8l-gfl" firstAttribute="trailing" secondItem="3zK-wE-hz3" secondAttribute="trailing" constant="16" id="FWl-J5-2DV"/>
+                            <constraint firstItem="dT8-xC-YiF" firstAttribute="centerX" secondItem="bBb-O9-WKR" secondAttribute="centerX" id="Mwl-XR-Z0I"/>
                             <constraint firstItem="3zK-wE-hz3" firstAttribute="centerX" secondItem="bBb-O9-WKR" secondAttribute="centerX" id="TLr-U6-Hdg"/>
+                            <constraint firstItem="3zK-wE-hz3" firstAttribute="top" secondItem="S8N-pu-gRB" secondAttribute="bottom" constant="8.6699999999999999" id="Tm2-Ce-cFk"/>
+                            <constraint firstItem="S8N-pu-gRB" firstAttribute="centerX" secondItem="bBb-O9-WKR" secondAttribute="centerX" id="XRT-t2-ZgW"/>
+                            <constraint firstItem="3zK-wE-hz3" firstAttribute="top" secondItem="dT8-xC-YiF" secondAttribute="bottom" constant="8.6699999999999999" id="XZH-c3-YxA"/>
                             <constraint firstItem="3zK-wE-hz3" firstAttribute="centerY" secondItem="bBb-O9-WKR" secondAttribute="centerY" id="bQx-pn-GcG"/>
+                            <constraint firstItem="dT8-xC-YiF" firstAttribute="leading" secondItem="bBb-O9-WKR" secondAttribute="leading" constant="10" id="cKh-qY-AJw"/>
                             <constraint firstItem="ARf-8l-gfl" firstAttribute="bottom" secondItem="ygH-9Z-MSs" secondAttribute="bottom" constant="53" id="dde-xM-hgC"/>
                             <constraint firstItem="ygH-9Z-MSs" firstAttribute="centerX" secondItem="bBb-O9-WKR" secondAttribute="centerX" id="dfI-u3-H5a"/>
+                            <constraint firstItem="dT8-xC-YiF" firstAttribute="top" secondItem="bBb-O9-WKR" secondAttribute="top" constant="30" id="eFI-kY-JSU"/>
+                            <constraint firstAttribute="trailing" secondItem="dT8-xC-YiF" secondAttribute="trailing" constant="10" id="vUJ-XU-edX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ARf-8l-gfl"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad" image="dad" selectedImage="dad" id="6Is-4W-VOv"/>
                     <connections>
                         <outlet property="dadJokeLabel" destination="3zK-wE-hz3" id="BQd-0b-Smt"/>
+                        <outlet property="forest" destination="dT8-xC-YiF" id="aI6-gT-s2G"/>
+                        <outlet property="run" destination="S8N-pu-gRB" id="aPz-2u-u89"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFR-BE-M2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1546.4000000000001" y="589.65517241379314"/>
+            <point key="canvasLocation" x="-1547.8260869565217" y="589.4021739130435"/>
         </scene>
         <!--Good-->
         <scene sceneID="hNz-n2-bh7">
@@ -169,7 +184,9 @@
     </scenes>
     <resources>
         <image name="dad" width="25" height="25"/>
+        <image name="forest" width="719" height="1024"/>
         <image name="good" width="25" height="25"/>
         <image name="pun" width="25" height="25"/>
+        <image name="run" width="227" height="247"/>
     </resources>
 </document>
